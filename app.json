@@ -1,28 +1,45 @@
 {
   "expo": {
-    "name": "summiters",
-    "slug": "summiters",
-    "version": "1.0.0",
+    "name": "summiter",
+    "slug": "summiter",
+    "version": "1.0.2",
+    "jsEngine": "jsc",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "assetBundlePatterns": "**/*",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#204F71"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "us.summiter",
+      "buildNumber": "13",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Summiter requires camera access to allow users to capture images of summits and adventures, enhancing the certificate's authenticity and sharing features."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.priyanksutaria.summiter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "62d5f818-6001-4fb4-9fa8-467f543a92fe"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
